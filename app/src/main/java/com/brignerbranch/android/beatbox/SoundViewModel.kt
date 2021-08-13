@@ -7,7 +7,13 @@ import androidx.databinding.Bindable
 Модель представления. Добавление функции привязки.
  */
 
-class SoundViewModel : BaseObservable(){
+class SoundViewModel(private val beatBox: BeatBox) : BaseObservable(){
+
+    fun onButtonClicked() {
+        sound?.let{
+            beatBox.play(it)
+        }
+    }
 
     var sound: Sound? = null
     set(sound){
