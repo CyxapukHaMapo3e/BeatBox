@@ -3,9 +3,7 @@ package com.brignerbranch.android.beatbox
 import androidx.databinding.BaseObservable
 import androidx.databinding.Bindable
 
-/*
-Модель представления. Добавление функции привязки.
- */
+
 
 class SoundViewModel(private val beatBox: BeatBox) : BaseObservable(){
 

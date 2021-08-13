@@ -72,13 +72,8 @@ class MainActivity : AppCompatActivity() {
         })
 
     }
-/*
-Вызов executePendingBindings() обычно не нужен. Однако в данном случае
-данные привязки обновляются в виджете RecyclerView, который обовляет представлеия с
-очень высокой скоростью. Вызывая эти функции, мы приказываем
-макету обновить себя немедленно, вместо того чтобы ожидать одну-две миллисекунды.
-Таким образом обеспечивается быстрота реакции RecyclerView синхронно с его RecyclerView.Adapter.
- */
+
+
     private inner class SoundHolder(private val binding: ListItemSoundBinding):
         RecyclerView.ViewHolder(binding.root){
             init {
